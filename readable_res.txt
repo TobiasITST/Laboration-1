@@ -1,0 +1,46 @@
+Results:
+-------------------------------------
+Host : 127.0.0.1
+------------------
+Scan number: 1
+Scan argument: nmap -oX - -sn --unprivileged 10.2.10.11 127.0.0.1 8.8.8.8 192.168.0.1
+Timestamp: Tue Oct 15 18:58:37 2024
+State : up
+-------------------------------------
+Host : 8.8.8.8
+------------------
+Scan number: 1
+Scan argument: nmap -oX - -sn --unprivileged 10.2.10.11 127.0.0.1 8.8.8.8 192.168.0.1
+Timestamp: Tue Oct 15 18:58:37 2024
+State : up
+-------------------------------------
+Host : 192.168.0.1
+------------------
+Scan number: 1
+Scan argument: nmap -oX - -sn --unprivileged 10.2.10.11 127.0.0.1 8.8.8.8 192.168.0.1
+Timestamp: Tue Oct 15 18:58:37 2024
+State : up
+------------------
+Scan number: 2
+Scan argument: nmap -oX - -sn --unprivileged 192.168.0.1/24
+Timestamp: Tue Oct 15 18:58:58 2024
+State : up
+------------------
+Scan number: 3
+Scan argument: nmap -oX - -A -T4 --unprivileged 192.168.0.1
+Timestamp: Tue Oct 15 18:59:37 2024
+
+Protocol : TCP
+Port: 53	State : open	Service: domain	Product: dnsmasq	Version: 2.78	
+Port: 80	State : open	Service: http	Product: lighttpd	Version: 1.4.20	
+Port: 2601	State : open	Service: quagga	Product: Quagga routing software	Version: 1.1.1	
+Port: 2602	State : open	Service: quagga	Product: Quagga routing software	Version: 1.1.1	
+Port: 8888	State : open	Service: upnp	Product: MiniUPnP	Version: 1.6	
+Port: 49152	State : open	Service: http	Product: lighttpd	Version: 1.4.20	
+-------------------------------------
+Host : 192.168.0.117
+------------------
+Scan number: 1
+Scan argument: nmap -oX - -sn --unprivileged 192.168.0.1/24
+Timestamp: Tue Oct 15 18:58:58 2024
+State : up

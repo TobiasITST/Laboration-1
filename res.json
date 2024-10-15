@@ -1,0 +1,203 @@
+{
+    "127.0.0.1": [
+        {
+            "timestr": "Tue Oct 15 18:58:37 2024",
+            "arguments": "nmap -oX - -sn --unprivileged 10.2.10.11 127.0.0.1 8.8.8.8 192.168.0.1",
+            "result": {
+                "hostnames": [
+                    {
+                        "name": "localhost",
+                        "type": "PTR"
+                    }
+                ],
+                "addresses": {
+                    "ipv4": "127.0.0.1"
+                },
+                "vendor": {},
+                "status": {
+                    "state": "up",
+                    "reason": "syn-ack"
+                }
+            }
+        }
+    ],
+    "8.8.8.8": [
+        {
+            "timestr": "Tue Oct 15 18:58:37 2024",
+            "arguments": "nmap -oX - -sn --unprivileged 10.2.10.11 127.0.0.1 8.8.8.8 192.168.0.1",
+            "result": {
+                "hostnames": [
+                    {
+                        "name": "dns.google",
+                        "type": "PTR"
+                    }
+                ],
+                "addresses": {
+                    "ipv4": "8.8.8.8"
+                },
+                "vendor": {},
+                "status": {
+                    "state": "up",
+                    "reason": "syn-ack"
+                }
+            }
+        }
+    ],
+    "192.168.0.1": [
+        {
+            "timestr": "Tue Oct 15 18:58:37 2024",
+            "arguments": "nmap -oX - -sn --unprivileged 10.2.10.11 127.0.0.1 8.8.8.8 192.168.0.1",
+            "result": {
+                "hostnames": [
+                    {
+                        "name": "dlinkrouter",
+                        "type": "PTR"
+                    }
+                ],
+                "addresses": {
+                    "ipv4": "192.168.0.1"
+                },
+                "vendor": {},
+                "status": {
+                    "state": "up",
+                    "reason": "syn-ack"
+                }
+            }
+        },
+        {
+            "timestr": "Tue Oct 15 18:58:58 2024",
+            "arguments": "nmap -oX - -sn --unprivileged 192.168.0.1/24",
+            "result": {
+                "hostnames": [
+                    {
+                        "name": "dlinkrouter",
+                        "type": "PTR"
+                    }
+                ],
+                "addresses": {
+                    "ipv4": "192.168.0.1"
+                },
+                "vendor": {},
+                "status": {
+                    "state": "up",
+                    "reason": "syn-ack"
+                }
+            }
+        },
+        {
+            "timestr": "Tue Oct 15 18:59:37 2024",
+            "arguments": "nmap -oX - -A -T4 --unprivileged 192.168.0.1",
+            "result": {
+                "hostnames": [
+                    {
+                        "name": "dlinkrouter",
+                        "type": "PTR"
+                    }
+                ],
+                "addresses": {
+                    "ipv4": "192.168.0.1"
+                },
+                "vendor": {},
+                "status": {
+                    "state": "up",
+                    "reason": "syn-ack"
+                },
+                "tcp": {
+                    "53": {
+                        "state": "open",
+                        "reason": "syn-ack",
+                        "name": "domain",
+                        "product": "dnsmasq",
+                        "version": "2.78",
+                        "extrainfo": "",
+                        "conf": "10",
+                        "cpe": "cpe:/a:thekelleys:dnsmasq:2.78",
+                        "script": {
+                            "dns-nsid": "\n  bind.version: dnsmasq-2.78"
+                        }
+                    },
+                    "80": {
+                        "state": "open",
+                        "reason": "syn-ack",
+                        "name": "http",
+                        "product": "lighttpd",
+                        "version": "1.4.20",
+                        "extrainfo": "",
+                        "conf": "10",
+                        "cpe": "cpe:/a:lighttpd:lighttpd:1.4.20",
+                        "script": {
+                            "http-title": "D-LINK",
+                            "http-server-header": "lighttpd/1.4.20"
+                        }
+                    },
+                    "2601": {
+                        "state": "open",
+                        "reason": "syn-ack",
+                        "name": "quagga",
+                        "product": "Quagga routing software",
+                        "version": "1.1.1",
+                        "extrainfo": "Derivative of GNU Zebra",
+                        "conf": "10",
+                        "cpe": "cpe:/a:quagga:quagga:1.1.1"
+                    },
+                    "2602": {
+                        "state": "open",
+                        "reason": "syn-ack",
+                        "name": "quagga",
+                        "product": "Quagga routing software",
+                        "version": "1.1.1",
+                        "extrainfo": "Derivative of GNU Zebra",
+                        "conf": "10",
+                        "cpe": "cpe:/a:quagga:quagga:1.1.1"
+                    },
+                    "8888": {
+                        "state": "open",
+                        "reason": "syn-ack",
+                        "name": "upnp",
+                        "product": "MiniUPnP",
+                        "version": "1.6",
+                        "extrainfo": "Netgear SDK 4.3.0.0; UPnP 1.0",
+                        "conf": "10",
+                        "cpe": "cpe:/a:miniupnp_project:miniupnpd:1.6"
+                    },
+                    "49152": {
+                        "state": "open",
+                        "reason": "syn-ack",
+                        "name": "http",
+                        "product": "lighttpd",
+                        "version": "1.4.20",
+                        "extrainfo": "",
+                        "conf": "10",
+                        "cpe": "cpe:/a:lighttpd:lighttpd:1.4.20",
+                        "script": {
+                            "http-title": "404 - Not Found",
+                            "http-server-header": "lighttpd/1.4.20"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "192.168.0.117": [
+        {
+            "timestr": "Tue Oct 15 18:58:58 2024",
+            "arguments": "nmap -oX - -sn --unprivileged 192.168.0.1/24",
+            "result": {
+                "hostnames": [
+                    {
+                        "name": "Tobias",
+                        "type": "PTR"
+                    }
+                ],
+                "addresses": {
+                    "ipv4": "192.168.0.117"
+                },
+                "vendor": {},
+                "status": {
+                    "state": "up",
+                    "reason": "syn-ack"
+                }
+            }
+        }
+    ]
+}
